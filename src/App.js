@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+// import React,{lazy,Suspense} from "react";
+import Post from "./components/Post";
+// import Counter from "./components/Counter";
+
+// const Test = lazy(()=>import("./components/Test"))
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <Counter/> */}
+      <Post />
+      {/* <Suspense fallback={<div>please wait...</div>}> 
+      <Test title="hi"/>
+      </Suspense> */}
     </div>
   );
 }
 
-export default App;
+export default App; 
